@@ -3,40 +3,6 @@ const sequelize = require('../../config/database');
 
 let spendHistory =  [];
 const PostController = () => {
-  
- 
-    
-
-    // const createPost = async (req, res) => {
-    //     console.log('req:', req.body)
-      
-    //   try {
-    //     const query = await Post.create({ posts: req.body.params });
-    //     // const posts = await sequelize.query(query, {
-    //     //   type: sequelize.QueryTypes.SELECT
-    //     // })
-    //     return res.status(200).json(query);
-    //       } catch (err) {
-    //           console.log(err);
-    //           return res.status(500).json({ msg: 'Internal server error' });
-    //       }
-    //   }
-
-    //   const updatePost = async (req, res) => {
-
-    //     console.log('reqqqqq:', req)
-    //     try {
-    //       const post = await Post.create({ id: req.query.id });
-    //     console.log(post.post); 
-    //     post.post = req.body.post;
-    //   await post.save();
-    //       return res.status(200).json({ abc: 'ankit' });
-    //         } catch (err) {
-    //             console.log(err);
-    //             return res.status(500).json({ msg: 'Internal server error' });
-    //         }
-    //     }
-
     spendHistory = (req, res) => {
       spendHistory = [{
         transId: 12, itemsPurchased: 345, amount: 1234, dateOfTrans: '22/03/1990', merchant: 'abc'
@@ -66,9 +32,7 @@ const PostController = () => {
         data: spendHistory
       });
 
-    }
-
-    //8105169183 vikas color
+    }   
 
     clientContacts = (req, res) => {
       let arr = [{
